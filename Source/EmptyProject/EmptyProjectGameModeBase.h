@@ -19,4 +19,13 @@ class EMPTYPROJECT_API AEmptyProjectGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
 	
+private:
+	class AndroidPhotoLibrary* PhotoLibrary;
+
+	void OpenGallery();
+	void OnPhotoSelected(TArray<uint8> PhotoBytes);
+	class UTexture2D* LoadImageFromBytes(const TArray<uint8>& ImageBytes);
+
+	UFUNCTION(BlueprintImplementableEvent)
+		void BP_OnPhotoSelected(class UTexture2D* SelectedPhoto);
 };
