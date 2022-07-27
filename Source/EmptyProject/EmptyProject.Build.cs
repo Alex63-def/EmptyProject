@@ -26,7 +26,7 @@ public class EmptyProject : ModuleRules
             AdditionalPropertiesForReceipt.Add(new ReceiptProperty("PhotoLibrary", System.IO.Path.Combine(pluginPath, "PhotoLibrary_APL.xml")));
         }
 
-        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "PhotoLibrary", "ImageWrapper" });
+        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "ImageWrapper" });
 
         // Uncomment if you are using Slate UI
         // PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
